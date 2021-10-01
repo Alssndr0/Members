@@ -1,5 +1,5 @@
 import pandas as pd
-datafile = '/Users/Alessandro/Desktop/1.xlsx'
+datafile = '/Users/Alessandro/Desktop/members.xlsx'
 df = pd.read_excel(datafile, header=8, index_col='Member Name')
 df = df[df.columns.drop(list(df.filter(regex='Unnamed:')))]
 
